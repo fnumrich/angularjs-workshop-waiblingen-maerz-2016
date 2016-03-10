@@ -1,0 +1,7 @@
+<div style="height: 100px; background-color: rgba({{ $ctrl.red }}, {{ $ctrl.green }}, {{ $ctrl.blue }}, {{ $ctrl.alpha }}");></div>
+<input type="range" ng-model="$ctrl.red" max="255">
+<input type="range" ng-model="$ctrl.green" max="255">
+<input type="range" ng-model="$ctrl.blue" max="255">
+<input type="range" ng-model="$ctrl.alpha" step="0.001" max="1.0">
+
+<pre>{{$ctrl | json}}</pre>
